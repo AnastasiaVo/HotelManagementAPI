@@ -1,0 +1,6 @@
+@FavorParkHotelAPI_HostAddress = http://localhost:5139
+
+GET {{FavorParkHotelAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
