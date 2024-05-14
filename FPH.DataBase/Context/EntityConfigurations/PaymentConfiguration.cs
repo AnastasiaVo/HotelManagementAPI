@@ -17,6 +17,7 @@ namespace FPH.DataBase.Context.EntityConfigurations
 
             builder.HasKey(p => p.Id);
             builder.Property(p => p.IsActive).IsRequired();
+            builder.Property(p => p.IsPaid).IsRequired();
             builder.Property(p => p.PaymentAmount)
                 .HasColumnType("decimal(18,2)")
                 .HasDefaultValue(decimal.Zero)

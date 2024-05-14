@@ -5,7 +5,7 @@ using FPH.Data.Entities;
 using FPH.DataBase.Abstractions;
 using FPH.DataBase.Context;
 using FPH.DataBase.Repositories;
-using System.Data;
+using FavorParkHotelAPI.Application.BookingManagement;
 
 namespace FavorParkHotelAPI.Data;
 
@@ -58,5 +58,6 @@ public static class DatabaseConfiguration
         services.AddScoped<IBookingRepository, BookingsRepository>();
         services.AddScoped<IPaymentRepository, PaymentRepository>();
         services.AddScoped<IPaymentTypeRepository, PaymentTypeRepository>();
+        services.AddTransient<RoomFeeCalculationService>();
     }
 }

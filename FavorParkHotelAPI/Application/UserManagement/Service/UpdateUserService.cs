@@ -48,7 +48,6 @@ namespace FavorParkHotelAPI.Application.UserManagement.Services
                 FirstName = userEntity.FirstName,
                 LastName = userEntity.LastName,
                 PhoneNumber = userEntity.PhoneNumber
-                // You may need to map other properties here
             });
         }
     }

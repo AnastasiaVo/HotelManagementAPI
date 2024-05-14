@@ -14,7 +14,9 @@ namespace FavorParkHotelAPI.Application.RoomManagement.Dto
 
         public int AccomodationTypeEntityId { get; set; }
 
-        public int BookingId { get; set; }
+        //public int? BookingId { get; set; } = null;
+
+        public virtual AccomodationTypeEntity AccomodationTypeEntity { get; set; }
 
     }
 }

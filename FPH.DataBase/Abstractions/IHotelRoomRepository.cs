@@ -15,5 +15,6 @@ namespace FPH.DataBase.Abstractions
         Task AddHotelRoomAsync(HotelRoomEntity hotelRoom);
         Task UpdateHotelRoomAsync(HotelRoomEntity hotelRoom);
         Task DeleteHotelRoomAsync(int id);
+        Task<IEnumerable<HotelRoomEntity>> GetFreeHotelRoomsByCapacityAsync(int capacity);
     }
 }

@@ -1,12 +1,6 @@
 ﻿using FPH.Common;
 using MediatR;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using FPH.Data.Entities;
 using FPH.DataBase.Abstractions;
-using Hellang.Middleware.ProblemDetails;
 using FavorParkHotelAPI.Application.RoomManagement.Dto;
 
 namespace FavorParkHotelAPI.Application.RoomManagement.Query
@@ -34,7 +28,7 @@ namespace FavorParkHotelAPI.Application.RoomManagement.Query
                 Capacity = room.Capacity,
                 IsReserved = room.IsReserved,
                 AccomodationTypeEntityId = room.AccomodationTypeEntityId,
-                BookingId = room.BookingId
+                //BookingId = room.BookingId
             }).ToList();
 
             return Success(dtoList);

@@ -9,5 +9,7 @@ namespace FPH.DataBase.Abstractions
         Task AddBookingAsync(BookingEntity booking);
         Task UpdateBookingAsync(BookingEntity booking);
         Task DeleteBookingAsync(int id);
+        Task<IEnumerable<BookingEntity>> SearchBookingsByGuestNameAsync(string guestName);
+        Task<IEnumerable<BookingEntity>> SearchBookingsByDatesAsync(DateTime startDate, DateTime endDate);
     }
 }

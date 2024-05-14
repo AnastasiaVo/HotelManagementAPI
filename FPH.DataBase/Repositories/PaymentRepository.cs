@@ -19,6 +19,11 @@ namespace FPH.DataBase.Repositories
             return await _context.Payments.FindAsync(id);
         }
 
+        public async Task<PaymentEntity> GetPaymentByBookingIdAsync(int bookingId)
+        {
+            return await _context.Payments.FirstOrDefaultAsync(p => p.BookingId == bookingId);
+        }
+
         public async Task<IEnumerable<PaymentEntity>> GetAllAsync()
         {
             return await _context.Payments.ToListAsync();

@@ -74,11 +74,16 @@ namespace FPH.DataBase.Migrations
                         .HasColumnType("decimal(18,2)")
                         .HasDefaultValue(0m);
 
+                    b.Property<int>("RoomId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoomId");
 
                     b.HasIndex("UserId");
 
@@ -96,7 +101,7 @@ namespace FPH.DataBase.Migrations
                     b.Property<int>("AccomodationTypeEntityId")
                         .HasColumnType("int");
 
-                    b.Property<int>("BookingId")
+                    b.Property<int?>("BookingId")
                         .HasColumnType("int");
 
                     b.Property<int>("Capacity")
@@ -136,6 +141,9 @@ namespace FPH.DataBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPaid")
                         .HasColumnType("bit");
 
                     b.Property<decimal>("PaymentAmount")
@@ -404,11 +412,19 @@ namespace FPH.DataBase.Migrations
 
             modelBuilder.Entity("FPH.Data.Entities.BookingEntity", b =>
                 {
+                    b.HasOne("FPH.Data.Entities.HotelRoomEntity", "HotelRooms")
+                        .WithMany()
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("FPH.Data.Entities.UserEntity", "User")
                         .WithMany("Bookings")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
+
+                    b.Navigation("HotelRooms");
 
                     b.Navigation("User");
                 });
@@ -422,10 +438,8 @@ namespace FPH.DataBase.Migrations
                         .IsRequired();
 
                     b.HasOne("FPH.Data.Entities.BookingEntity", "Booking")
-                        .WithMany("HotelRoomEntities")
-                        .HasForeignKey("BookingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany()
+                        .HasForeignKey("BookingId");
 
                     b.HasOne("FPH.Data.Entities.UserEntity", "Users")
                         .WithMany("HotelRoom")
@@ -515,8 +529,6 @@ namespace FPH.DataBase.Migrations
 
             modelBuilder.Entity("FPH.Data.Entities.BookingEntity", b =>
                 {
-                    b.Navigation("HotelRoomEntities");
-
                     b.Navigation("PaymentEntity");
                 });
 

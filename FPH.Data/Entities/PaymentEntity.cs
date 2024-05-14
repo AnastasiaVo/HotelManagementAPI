@@ -14,5 +14,7 @@
         public decimal PaymentAmount { get; set; } = decimal.Zero;
 
         public bool IsActive { get; set; }
+
+        public bool IsPaid { get; set; } = true;
     }
 }

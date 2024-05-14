@@ -10,12 +10,12 @@ namespace FavorParkHotelAPI.Application.AccomodationTypeManagement.Services
 {
     public class UpdateAccomodationTypeService : IRequest<Response<AccomodationTypeDto>>
     {
-        public UpdateAccomodationTypeService(UpdateAccomodationTypeDto dto)
+        public UpdateAccomodationTypeService(AccomodationTypeDto dto)
         {
             Dto = dto;
         }
 
-        public UpdateAccomodationTypeDto Dto { get; }
+        public AccomodationTypeDto Dto { get; }
     }
 
     public class UpdateAccomodationTypeServiceHandler : BaseHandler<UpdateAccomodationTypeService, AccomodationTypeDto>

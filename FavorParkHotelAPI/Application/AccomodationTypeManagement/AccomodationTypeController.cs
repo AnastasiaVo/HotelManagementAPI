@@ -1,12 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
 using FavorParkHotelAPI.Application.AccomodationTypeManagement.Dto;
 using FavorParkHotelAPI.Application.AccomodationTypeManagement.Services;
-using FPH.DataBase.Repositories;
-using FPH.Common;
 using FavorParkHotelAPI.Application.AccomodationTypeManagement.Query;
 
 namespace FavorParkHotelAPI.Application.AccomodationTypeManagement
@@ -50,7 +45,7 @@ namespace FavorParkHotelAPI.Application.AccomodationTypeManagement
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAccomodationType(int id, [FromBody] UpdateAccomodationTypeDto request)
+        public async Task<IActionResult> UpdateAccomodationType(int id, [FromBody] AccomodationTypeDto request)
         {
             request.Id = id;
             var result = await Mediator.Send(new UpdateAccomodationTypeService(request));

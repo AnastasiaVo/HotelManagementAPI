@@ -17,7 +17,7 @@ namespace FPH.Data.Entities
 
         public virtual UserEntity? Users { get; set; } 
 
-        public int BookingId { get; set; }
+        public int? BookingId { get; set; }
 
         public virtual BookingEntity? Booking { get; set; }
     }

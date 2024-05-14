@@ -1,10 +1,13 @@
-﻿namespace FPH.Data.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FPH.Data.Entities
 {
     public class BookingEntity
     {
         public int Id { get; set; }
 
-        public virtual List<HotelRoomEntity> HotelRoomEntities { get; set; } = new();
+        public int RoomId { get; set; }
+        public virtual HotelRoomEntity? HotelRooms { get; set; }
 
         public string UserId { get; set; } = string.Empty;
 

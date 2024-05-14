@@ -4,9 +4,6 @@ using FPH.Common;
 using FPH.Data.Entities;
 using FPH.DataBase.Context;
 using MediatR;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace FavorParkHotelAPI.Application.RoomManagement.Services
 {
@@ -38,7 +35,7 @@ namespace FavorParkHotelAPI.Application.RoomManagement.Services
                 Capacity = roomDto.Capacity,
                 IsReserved = roomDto.IsReserved,
                 AccomodationTypeEntityId = roomDto.AccomodationTypeEntityId,
-                BookingId = roomDto.BookingId
+                /*BookingId = roomDto.BookingId ?? 0*/// Set BookingId if provided
             };
 
             _dbContext.HotelRooms.Add(roomEntity);
@@ -51,13 +48,12 @@ namespace FavorParkHotelAPI.Application.RoomManagement.Services
                 Capacity = roomEntity.Capacity,
                 IsReserved = roomEntity.IsReserved,
                 AccomodationTypeEntityId = roomEntity.AccomodationTypeEntityId,
-                BookingId = roomEntity.BookingId
+                //BookingId = roomEntity.BookingId
             };
-
-            //var result = new RoomDto(roomDto);
 
             return Success(createdRoomDto);
         }
     }
 }
+
 

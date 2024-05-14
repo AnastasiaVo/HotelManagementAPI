@@ -52,5 +52,12 @@ namespace FPH.DataBase.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<IEnumerable<HotelRoomEntity>> GetFreeHotelRoomsByCapacityAsync(int capacity)
+        {
+            return await _context.HotelRooms
+                .Where(room => room.Capacity == capacity && !room.IsReserved)
+                .ToListAsync();
+        }
     }
 }

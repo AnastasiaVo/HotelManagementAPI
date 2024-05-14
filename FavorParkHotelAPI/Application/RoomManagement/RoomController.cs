@@ -1,15 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
-using FPH.Common;
 using FavorParkHotelAPI.Application.RoomManagement.Dto;
 using FavorParkHotelAPI.Application.RoomManagement.Services;
 using FavorParkHotelAPI.Application.RoomManagement.Query;
 
-namespace FavorParkHotelAPI.Controllers
+namespace FavorParkHotelAPI.Application.RoomManagement
 {
     [ApiController]
     [Route("room")]
@@ -73,9 +69,18 @@ namespace FavorParkHotelAPI.Controllers
 
         [HttpGet]
         [Route("checkReservation")]
-        public async Task<IActionResult> CheckRoomReservation(int roomId)
+        public async Task<IActionResult> CheckRoomReservation(int roomId, DateTime startDate, DateTime endDate)
         {
-            var response = await _mediator.Send(new CheckRoomReservationService(roomId));
+            var response = await _mediator.Send(new CheckRoomReservationService(roomId, startDate, endDate));
+            return Result(response);
+        }
+
+        [HttpGet("free-rooms/{capacity}")]
+        public async Task<IActionResult> GetFreeHotelRoomsByCapacityAsync(int capacity)
+        {
+            var query = new GetFreeHotelRoomsByCapacityService(capacity);
+            var response = await Mediator.Send(query);
+
             return Result(response);
         }
 

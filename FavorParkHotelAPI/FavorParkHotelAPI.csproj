@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="NSwag.Annotations" Version="14.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
 	  <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1" />
@@ -31,10 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\BookingManagement\Dto\" />
-    <Folder Include="Application\BookingManagement\Service\" />
-    <Folder Include="Application\BookingManagement\Query\" />
-    <Folder Include="Application\UserManagement\Query\" />
+    <Folder Include="Application\BookingManagement\Mapper\" />
   </ItemGroup>
 
 </Project>

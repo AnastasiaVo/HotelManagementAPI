@@ -3,6 +3,7 @@ using MediatR;
 using FavorParkHotelAPI.Application.AccomodationTypeManagement.Dto;
 using FPH.DataBase.Abstractions;
 using FPH.Data.Entities;
+using FavorParkHotelAPI.Application.PaymentTypeManagement.Dto;
 
 namespace FavorParkHotelAPI.Application.AccomodationTypeManagement.Services
 {

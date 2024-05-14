@@ -1,6 +1,6 @@
 ﻿namespace FavorParkHotelAPI.Application.UserManagement.Dto;
 
-public class UserLoginModel
+public class UserLoginDto
 {
     public string Id { get; set; }
     

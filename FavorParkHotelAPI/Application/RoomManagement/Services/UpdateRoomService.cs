@@ -41,7 +41,7 @@ namespace FavorParkHotelAPI.Application.RoomManagement.Services
             roomEntity.Capacity = roomDto.Capacity;
             roomEntity.IsReserved = roomDto.IsReserved;
             roomEntity.AccomodationTypeEntityId = roomDto.AccomodationTypeEntityId;
-            roomEntity.BookingId = roomDto.BookingId;
+            //roomEntity.BookingId = roomDto.BookingId ?? 0;
 
             await _roomRepository.UpdateHotelRoomAsync(roomEntity);
 
@@ -52,7 +52,7 @@ namespace FavorParkHotelAPI.Application.RoomManagement.Services
                 Capacity = roomEntity.Capacity,
                 IsReserved = roomEntity.IsReserved,
                 AccomodationTypeEntityId = roomEntity.AccomodationTypeEntityId,
-                BookingId = roomEntity.BookingId
+                //BookingId = roomEntity.BookingId
             });
         }
     }

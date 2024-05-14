@@ -25,7 +25,12 @@ namespace FPH.DataBase.Context.EntityConfigurations
                 .HasForeignKey(b => b.UserId)
                 .OnDelete(DeleteBehavior.NoAction)
                 .IsRequired();
-            
+
+            builder.HasOne(b => b.HotelRooms)
+                .WithMany()
+                .HasForeignKey(b => b.RoomId)
+                .IsRequired();
+
             builder.Property(p => p.RoomFeePerNight)
                 .HasColumnType("decimal(18,2)")
                 .HasDefaultValue(decimal.Zero)

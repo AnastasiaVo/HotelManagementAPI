@@ -44,5 +44,18 @@ namespace FPH.DataBase.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<IEnumerable<BookingEntity>> SearchBookingsByGuestNameAsync(string guestName)
+        {
+            return await _context.HotelBookings.Where(b => b.User.LastName == guestName).ToListAsync();
+        }
+
+        public async Task<IEnumerable<BookingEntity>> SearchBookingsByDatesAsync(DateTime startDate, DateTime endDate)
+        {
+            // Ensure that the comparison includes bookings that overlap with the specified date range
+            return await _context.HotelBookings
+                .Where(b => b.CheckInDate <= endDate && b.CheckOutDate >= startDate)
+                .ToListAsync();
+        }
     }
 }
