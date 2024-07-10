@@ -39,12 +39,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 app.UseHttpsRedirection();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseProblemDetails();
 
-//app.UseStaticFiles();
+
+app.UseStaticFiles();
 
 app.UseAuthentication();
 
@@ -52,9 +57,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseCors(x => x
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
 
 app.Run();

@@ -28,10 +28,7 @@ namespace FPH.DataBase.Repositories
         {
             return await _context.Users.Where(u => u.LastName == surname).ToListAsync();
         }
-        //public async Task<UserEntity> GetByEmailAsync (string email)
-        //{
-        //    return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-        //}
+       
         public async Task<IEnumerable<UserEntity>> GetAllUsersAsync()
         {
             return await _context.Users.ToListAsync();

@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FPH.Data.Entities.HotelRoomEntity" Collapsed="true">
+    <Position X="2.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.Data.Entities.AccomodationTypeEntity" Collapsed="true">
+    <Position X="6.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.Data.Entities.BookingEntity" Collapsed="true">
+    <Position X="10" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.Data.Entities.PaymentEntity" Collapsed="true">
+    <Position X="0.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.Data.Entities.PaymentTypeEntity" Collapsed="true">
+    <Position X="4.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.Data.Entities.RoleEntity" Collapsed="true">
+    <Position X="8.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.Data.Entities.UserEntity" Collapsed="true">
+    <Position X="12" Y="14.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FPH.DataBase.Repositories.AccomodationTypeRepository" Collapsed="true">
+    <Position X="6.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FPH.DataBase.Repositories.BookingsRepository" Collapsed="true">
+    <Position X="10" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FPH.DataBase.Repositories.HotelRoomRepository" Collapsed="true">
+    <Position X="2.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FPH.DataBase.Repositories.PaymentRepository" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FPH.DataBase.Repositories.PaymentTypeRepository" Collapsed="true">
+    <Position X="4.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FPH.DataBase.Repositories.UserRepository" Collapsed="true">
+    <Position X="12" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.BaseController" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.BaseHandler&lt;TRequest, TResponse&gt;">
+    <Position X="15.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.AccomodationTypeController">
+    <Position X="2.75" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAggAAQAAAAAAAAAAAAAAAgAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\AccomodationTypeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Dto.AccomodationTypeDto">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Dto\AccomodationTypeDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Dto.CreateAccomodationTypeDto">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Dto\CreateAccomodationTypeDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Query.GetAccomodationTypeByIdServiceHandler">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Query\GetAccomodationTypeByIdService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Query.GetAllAccomodationTypesServiceHandler">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Query\GetAllAccomodationTypesService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Query.GetNumberOfBedsInAccomodationTypeServiceHandler">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Query\GetNumberOfBedsInAccomodationTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Services.CreateAccomodationTypeServiceHandler">
+    <Position X="3.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Services\CreateAccomodationTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Services.DeleteAccomodationTypeServiceHandler">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Services\DeleteAccomodationTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.AccomodationTypeManagement.Services.UpdateAccomodationTypeServiceHandler">
+    <Position X="1.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\AccomodationTypeManagement\Services\UpdateAccomodationTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.AuthorizationController">
+    <Position X="8.25" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Application\Authentification\AuthorizationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.Dto.LogInDto" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Application\Authentification\Dto\LogInDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.Dto.GetTokenDto" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Application\Authentification\Dto\GetTokenDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.Dto.GetUserDto" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Application\Authentification\Dto\GetUserDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.Dto.RegisterUserDto" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAQAAAAAAAAAACAAAAAAAAIAg=</HashCode>
+      <FileName>Application\Authentification\Dto\RegisterUserDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.Services.CreateUserService">
+    <Position X="6.25" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.Authentification.Services.CreateUserService.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\Authentification\Services\CreateUserService.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\Authentification\Services\CreateUserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.Authentification.Services.LoginService">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.Authentification.Services.LoginService.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\Authentification\Services\LoginService.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\Authentification\Services\LoginService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.BookingController">
+    <Position X="10.25" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAEAAAAAAAAAAABAAAAAAAIAAAAABAAAQAAEA=</HashCode>
+      <FileName>Application\BookingManagement\BookingController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.RoomFeeCalculationService">
+    <Position X="12.75" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAABAAAAAAAIA=</HashCode>
+      <FileName>Application\BookingManagement\RoomFeeCalculationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Dto.BookingDetailsDto" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAQAAAAAAAQAAgAAAAAAAIAAAAAAAEAAEA=</HashCode>
+      <FileName>Application\BookingManagement\Dto\BookingDetailsDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Dto.BookingDto" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAAAAAABAQAAgAAAAAABIAAAAAAAEAAEA=</HashCode>
+      <FileName>Application\BookingManagement\Dto\BookingDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Dto.CreateBookingDto" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAQAAgAAAAAAAIAAAAAAAEAAEA=</HashCode>
+      <FileName>Application\BookingManagement\Dto\CreateBookingDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Query.GetAllBookingsServiceHandler">
+    <Position X="15.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIBAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Query\GetAllBookingsService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Query.GetBookingDetailsByIdServiceHandler" Collapsed="true">
+    <Position X="17.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIBAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Query\GetBookingDetailsByIdService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Query.SearchBookingsByDatesServiceHandler">
+    <Position X="15.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIBAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Query\SearchBookingsByDatesService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Query.SearchBookingsByGuestNameServiceHandler">
+    <Position X="13.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIBAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Query\SearchBookingsByGuestLastNameService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Services.CreateBookingService">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Service\CreateBookingService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Services.DeleteBookingServiceHandler">
+    <Position X="13.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Service\DeleteBookingService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.BookingManagement.Services.UpdateBookingServiceHandler">
+    <Position X="11.25" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAgAAAABABAAAAAAAAAAAAAAAIgAAAAAAAAAAA=</HashCode>
+      <FileName>Application\BookingManagement\Service\UpdateBookingService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentManagement.PaymentController">
+    <Position X="20" Y="1.75" Width="2" />
+    <InheritanceLine Type="FavorParkHotelAPI.BaseController" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="1.191" />
+        <Point X="10.5" Y="1.383" />
+        <Point X="14.688" Y="1.383" />
+        <Point X="14.688" Y="2.757" />
+        <Point X="17.688" Y="2.757" />
+        <Point X="17.688" Y="0.938" />
+        <Point X="20.562" Y="0.938" />
+        <Point X="20.562" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAgAAgAAgAAAABAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentManagement\PaymentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentManagement.Dto.CreatePaymentDto">
+    <Position X="22" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAEAAAAAAAAAAAAQAAAAAAAAEAAAA=</HashCode>
+      <FileName>Application\PaymentManagement\Dto\CreatePaymentDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentManagement.Dto.PaymentDto">
+    <Position X="21.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAIAAAAEAAAAAAAAAAAAQAAAAAAAAEAAAA=</HashCode>
+      <FileName>Application\PaymentManagement\Dto\PaymentDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentManagement.Query.GetAllPaymentsQueryHandler">
+    <Position X="19.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentManagement\Query\GetAllPaymentsQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentManagement.Query.GetPaymentByIdQueryHandler">
+    <Position X="18.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentManagement\Query\GetPaymentByIdQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentManagement.Service.CreatePaymentServiceHandler">
+    <Position X="20.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAIAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentManagement\Service\CreatePaymentService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.PaymentTypeController">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAQAAAAEAAAAAAAAAAAAAQAgAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\PaymentTypeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.Dto.PaymentTypeDto" Collapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\Dto\PaymentTypeDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.Query.GetAllPaymentTypesServiceHandler">
+    <Position X="24.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\Query\GetAllPaymentTypesService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.Query.GetPaymentTypeByIdService">
+    <Position X="28.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\Query\GetPaymentTypeByIdService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.Services.CreatePaymentTypeServiceHandler">
+    <Position X="26.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\Services\CreatePaymentTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.Services.DeletePaymentTypeServiceHandler">
+    <Position X="24.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\Services\DeletePaymentTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.PaymentTypeManagement.Services.UpdateAccomodationTypeServiceHandler">
+    <Position X="26.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\PaymentTypeManagement\Services\UpdatePaymentTypeService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.RoomController">
+    <Position X="17.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABARAgAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAEEA=</HashCode>
+      <FileName>Application\RoomManagement\RoomController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Dto.ApplyRoomDto" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAAAAAAAIAACgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Dto\ApplyRoomDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Dto.RoomDto" Collapsed="true">
+    <Position X="24.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEBAAAAAAAIAACgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Dto\RoomDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Query.GetAllHotelRoomsServiceHandler">
+    <Position X="22" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Query\GetAllHotelRoomsService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Query.GetFreeHotelRoomsByCapacityServiceHandler">
+    <Position X="27.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Query\GetFreeHotelRoomsByCapacityService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Query.GetHotelRoomByIdServiceHandler">
+    <Position X="23" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Query\GetHotelRoomByIdService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Query.GetRoomCapacityByIdServiceHandler">
+    <Position X="19.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Query\GetRoomCapacityByIdService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Services.CheckRoomReservationServiceHandler">
+    <Position X="25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Query\CheckRoomReservationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Services.CreateRoomService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Services\CreateRoomService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Services.DeleteRoomServiceHandler">
+    <Position X="24.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Services\DeleteRoomService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.RoomManagement.Services.UpdateRoomServiceHandler">
+    <Position X="26.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\RoomManagement\Services\UpdateRoomService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.UserHelper" Collapsed="true">
+    <Position X="9" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\UserHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.CredentialController">
+    <Position X="5.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAgAAEAABAIAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\CredentialController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Dto.LoginUserModel" Collapsed="true">
+    <Position X="9" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Dto\LoginUserModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Dto.ResetPasswordModel" Collapsed="true">
+    <Position X="10.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAgEAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Dto\ResetPasswordModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Dto.ResetPasswordModelByEmail" Collapsed="true">
+    <Position X="7.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAgAAAAAQCAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Dto\ResetPasswordModelByEmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Dto.UserLoginGetModel" Collapsed="true">
+    <Position X="10.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Dto\UserLoginGetModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Query.GetLoginUserQuery" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="16.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Query.GetLoginUserQuery.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Query\GetLoginUserQuery.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Query\GetLoginUserQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.CreateAdminCommand">
+    <Position X="15" Y="16" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.CreateAdminCommand.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Service\CreateAdminCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Service\CreateAdminCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.DropPasswordCommand">
+    <Position X="16.75" Y="16" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.DropPasswordCommand.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Service\DropPasswordCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Service\DropPasswordCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.RemoveAdminCommand">
+    <Position X="18.5" Y="16" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.RemoveAdminCommand.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Service\RemoveAdminCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Service\RemoveAdminCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.ResetPasswordByEmailCommand">
+    <Position X="13.25" Y="16" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.ResetPasswordByEmailCommand.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Service\ResetPasswordByEmailCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Service\ResetPasswordByEmailCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.ResetPasswordCommand">
+    <Position X="22" Y="16" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.ResetPasswordCommand.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Service\ResetPasswordCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Service\ResetPasswordCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.UpdateUserLoginCommand">
+    <Position X="20.25" Y="16" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Credentials.Service.UpdateUserLoginCommand.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Credentials\Service\UpdateUserLoginCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Credentials\Service\UpdateUserLoginCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Dto.UpdateUserDto" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Application\UserManagement\Dto\UpdateUserDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Dto.UserDto" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Application\UserManagement\Dto\UserDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Dto.UserLoginDto" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Dto\UserLoginDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Query.GetUserByNameQuery">
+    <Position X="24" Y="17" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Query.GetUserByNameQuery.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Query\GetUserByNameQuery.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Query\GetUserByNameQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Query.GetUserQuery">
+    <Position X="26" Y="17" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Query.GetUserQuery.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Query\GetUserQuery.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Query\GetUserQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Query.IsExistQuery">
+    <Position X="28" Y="17" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="FavorParkHotelAPI.Application.UserManagement.Query.IsExistQuery.Handler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Application\UserManagement\Query\IsExistQuery.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Query\IsExistQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FavorParkHotelAPI.Application.UserManagement.Services.UpdateUserServiceHandler" Collapsed="true">
+    <Position X="29.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\Service\UpdateUserService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoHosting.Api.Application.Users.UserController">
+    <Position X="29" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAACAAAAQAAAAAAEAAAQAAAAAA=</HashCode>
+      <FileName>Application\UserManagement\UserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FPH.DataBase.Abstractions.IAccomodationTypeRepository" Collapsed="true">
+    <Position X="6.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="FPH.DataBase.Abstractions.IBookingRepository" Collapsed="true">
+    <Position X="10" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="FPH.DataBase.Abstractions.IHotelRoomRepository" Collapsed="true">
+    <Position X="2.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="FPH.DataBase.Abstractions.IPaymentRepository" Collapsed="true">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="FPH.DataBase.Abstractions.IPaymentTypeRepository" Collapsed="true">
+    <Position X="4.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="FPH.DataBase.Abstractions.IUserRepository" Collapsed="true">
+    <Position X="12" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

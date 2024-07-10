@@ -13,57 +13,6 @@ using FavorParkHotelAPI.Application.Authentification.Dto;
 
 namespace FavorParkHotelAPI.Application.Authentification.Services
 {
-    //public class LoginService
-    //{
-    //    private readonly UserManager<UserEntity> _userManager;
-    //    private readonly IConfiguration _configuration;
-
-    //    public LoginService(UserManager<UserEntity> userManager, IConfiguration configuration)
-    //    {
-    //        _userManager = userManager;
-    //        _configuration = configuration;
-    //    }
-
-    //    public async Task<Response<GetTokenDto>> LoginAsync(LogInDto loginModel)
-    //    {
-    //        var user = await _userManager.FindByEmailAsync(loginModel.PhoneNumber);
-    //        if (user == null || !await _userManager.CheckPasswordAsync(user, loginModel.Password))
-    //        {
-    //            throw new ProblemDetailsException(StatusCodes.Status400BadRequest, "Invalid login or password");
-    //        }
-
-    //        var roles = await _userManager.GetRolesAsync(user);
-    //        var token = GenerateToken(user, roles);
-
-    //        var result = new GetTokenDto { Token = token };
-
-    //        return new Response<GetTokenDto>(result);
-    //    }
-
-    //    private string GenerateToken(UserEntity user, IEnumerable<string> roles)
-    //    {
-    //        var tokenHandler = new JwtSecurityTokenHandler();
-    //        var authOptions = new AuthConfigurationOptions(_configuration);
-
-    //        var key = Encoding.UTF8.GetBytes(authOptions.SecretKey);
-    //        var claims = roles.Select(role => new Claim(ClaimTypes.Role, role))
-    //                          .Append(new Claim(ClaimTypes.Name, user.Id))
-    //                          .Append(new Claim(ClaimTypes.NameIdentifier, user.UserName ?? user.Id));
-
-    //        var tokenDescriptor = new SecurityTokenDescriptor
-    //        {
-    //            Subject = new ClaimsIdentity(claims),
-    //            Issuer = authOptions.Issuer,
-    //            Audience = authOptions.Audience,
-    //            Expires = DateTime.UtcNow.AddDays(authOptions.LifeTime),
-    //            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-    //        };
-
-    //        var token = tokenHandler.CreateToken(tokenDescriptor);
-    //        return tokenHandler.WriteToken(token);
-    //    }
-    //}
-
     public class LoginService : IRequest<Response<GetTokenDto>>
     {
         public LoginService(LogInDto loginModel)
